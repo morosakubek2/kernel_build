@@ -55,7 +55,7 @@ jobs:
       - name: Move Scripts to Kernel
         working-directory: scripts
         run: |
-          cp build_counter.txt ci_build.py ../android_kernel_xiaomi_ginkgo_ryzen
+          cp build_counter.txt ci_build.py ../kernel_samsung_a32
 
       - name: Github set Config
         working-directory: ./kernel_samsung_a32
