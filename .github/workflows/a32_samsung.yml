@@ -47,7 +47,7 @@ jobs:
         uses: whyakari/github-repo-action@v3.1
         with:
           depth: 1
-          branch: 'main'
+          branch: 'non-ksu'
           owner: 'whyakari'
           repository: 'scripts'
           access-token: ${{ secrets.TOKEN_GITHUB }}
@@ -78,7 +78,7 @@ jobs:
         working-directory: ./kernel_samsung_a32
         run: |
           chmod +x moe.sh
-          python3 ci_build.py -t development # release
+          python3 ci_build.py # -t development # release
 
       - name: Copy File to Scripts
         working-directory: ./kernel_samsung_a32
@@ -90,4 +90,4 @@ jobs:
         run: |
           git add build_counter.txt
           git commit -m "update build counter"
-          git push origin main --force
+          git push origin non-ksu --force
