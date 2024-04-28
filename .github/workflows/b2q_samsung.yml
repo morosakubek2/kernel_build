@@ -24,9 +24,9 @@ jobs:
           access-token: ${{ secrets.TOKEN_GITHUB }}
 
       - name: Clone Repo Build
-        uses: whyakari/github-repo-action@v3.1
+        uses: morosakubek2/github-repo-action@v3.1
         with:
-          owner: 'whyakari'
+          owner: 'morosakubek2'
           repository: 'kernel_build'
           access-token: ${{ secrets.TOKEN_GITHUB }}
 
